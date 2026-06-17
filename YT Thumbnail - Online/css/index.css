@@ -1,0 +1,236 @@
+.focus {
+    animation: ani-frst 200ms;
+}
+
+:root {
+    --focus-clr: blue;
+}
+
+@keyframes ani-frst {
+    0% {
+        transform: translateX(0);
+        box-shadow: none;
+    }
+
+    25% {
+        transform: translateX(5px);
+        box-shadow: -1px 0px 13px var(--focus-clr);
+    }
+
+    50% {
+        transform: translateX(-5px);
+        box-shadow: -1px 0px 13px var(--focus-clr);
+    }
+
+    75% {
+        transform: translateX(5px);
+        box-shadow: -1px 0px 13px var(--focus-clr);
+    }
+
+    100% {
+        transform: translateX(0);
+        box-shadow: none;
+    }
+}
+
+#toolBox {
+    /* margin-top: 1.2rem; */
+}
+
+main h2 {
+    text-align: center;
+    font-weight: 400;
+    line-height: 2.2rem;
+    background: linear-gradient(90deg, transparent, var(--grey-color), transparent);
+}
+
+#toolBox>h5 {
+    margin-top: 0.6rem;
+    text-align: center;
+}
+
+#toolBox>h5>input {
+    margin: 0.2rem;
+    font-size: medium;
+    font-weight: 400;
+    line-height: 1.5;
+    border-radius: 0.2rem;
+}
+
+#toolBox>h5>input[type="text"] {
+    padding: 0.2rem 0.2rem;
+    width: 80%;
+    color: var(--black-color);
+    background: var(--white-color);
+    border: 1px solid var(--grey-color);
+    appearance: none;
+    transition: backdrop-filter, filter, color, background, background-color, box-shadow, border;
+    transition-duration: 0.5s;
+}
+
+#toolBox>h5>input[type="text"]:focus {
+    outline: 0;
+    border-color: var(--primary-color);
+}
+
+#toolBox>h5>input[type="button"] {
+    padding: 0.2rem 2.2rem;
+    outline: 0;
+    border: none;
+    color: var(--white-color);
+    background: var(--primary-color);
+    cursor: pointer;
+    transition: backdrop-filter, filter, color, background, background-color, box-shadow, border;
+    transition-duration: 0.5s;
+}
+
+#toolBox>h5>input[type="button"]:hover {
+    filter: brightness(1.2);
+}
+
+#toolBox>P {
+    text-align: center;
+    color: red;
+}
+
+#imgHolder {
+    padding: 0.5rem 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.thumb {
+    margin: .2rem 0.2rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 0.5rem 0.5rem;
+    width: fit-content;
+
+    border: 1px solid var(--grey-color);
+}
+
+.thumb>* {
+    margin: 0.2rem 0.2rem;
+}
+
+.thumb>h3 {
+    text-align: center;
+    font-size: medium;
+    align-content: center;
+}
+
+@media screen and (max-width: 550px) {
+    .thumb>h3 {
+        flex-direction: column;
+        margin-top: 0.5rem;
+        text-align: center;
+        font-size: medium;
+        align-content: center;
+    }
+
+    .thumb>h3>span {
+        display: block !important;
+        width: 100% !important;
+    }
+}
+
+.thumb>img {
+    width: 20rem;
+    transition: filter 0.5s;
+}
+
+.thumb:nth-child(1)>img,
+.thumb:nth-child(4)>img {
+    aspect-ratio: 16/9;
+}
+
+.thumb:nth-child(2)>img,
+.thumb:nth-child(3)>img {
+    aspect-ratio: 4/3;
+}
+
+.thumb>img:hover {
+    filter: contrast(1.2);
+}
+
+.thumb>h3 {
+    width: 100%;
+}
+
+.btn-box {
+    display: flex;
+}
+
+.thumb>h3>span {
+    margin: 0.2rem 0.2rem;
+    padding: 0.2rem 0rem;
+    width: 50%;
+    border-radius: 0.2rem;
+    color: var(--white-color);
+    background: var(--primary-color);
+    cursor: pointer;
+    transition: backdrop-filter, filter, color, background, background-color, box-shadow, border;
+    transition-duration: 0.5s;
+}
+
+.thumb>h3>span:hover {
+    filter: brightness(1.2);
+}
+
+.thumb>h3>span:nth-child(1) {
+    background: var(--black-color);
+}
+
+/* This CSS for Text */
+#toolText {
+    margin-top: 1.2rem;
+    text-align: center;
+}
+
+#toolText>* {
+    line-height: 2.2rem;
+}
+
+#toolText>h2 {
+    margin: 1.2rem 0;
+}
+
+#toolText li {
+    list-style: none;
+    font-weight: 300;
+}
+
+#toolText h1,
+h2,
+h3,
+h4 {
+    font-weight: 400;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 400;
+    line-height: 2.2rem;
+    background: linear-gradient(90deg, transparent, var(--grey-color), transparent);
+}
+
+#toolText p {
+    font-weight: 300;
+}
+
+#toolText pre {
+    font-weight: 300;
+}
+
+#toolText b {
+    font-weight: 400;
+}
+
+#toolText strong {
+    font-weight: 500;
+}
