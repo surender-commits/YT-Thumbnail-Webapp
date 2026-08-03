@@ -2,6 +2,11 @@
 
 A lightweight web application that allows users to quickly preview and download YouTube video thumbnails in multiple available resolutions. Simply paste a YouTube video URL, and the application automatically extracts the video ID, displays thumbnail previews, and provides download options for different image qualities.
 
+## Screenshots
+
+<img src="https://github.com/surender-commits/YT-Thumbnail-Webapp/blob/main/YT-Thumbnail-Webapp.jpg"  width="auto" height="auto" >
+
+
 ## Overview
 
 YT Thumbnail - Online is designed to simplify the process of obtaining YouTube video thumbnails without requiring browser extensions, third-party software, or manual URL manipulation.
