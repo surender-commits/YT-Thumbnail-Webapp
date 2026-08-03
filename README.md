@@ -4,8 +4,9 @@ A lightweight web application that allows users to quickly preview and download 
 
 ## Screenshots
 
+<kbd>
 <img src="https://github.com/surender-commits/YT-Thumbnail-Webapp/blob/main/YT-Thumbnail-Webapp.jpg"  width="auto" height="auto" >
-
+</kbd>
 
 ## Overview
 
